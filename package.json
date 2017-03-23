@@ -8,7 +8,8 @@
     "start": "nodemon --watch server server/index & webpack --watch",
     "test": "tape -r babel-register 'test/**/*.test.js' | tap-diff",
     "watch": "nodemon -e js,jsx -x npm test",
-    "dev": "webpack-dev-server --hot --inline"
+    "dev": "webpack-dev-server --hot --inline",
+    "knex": "knex"
   },
   "babel": {
     "presets": [
@@ -39,6 +40,8 @@
     "body-parser": "^1.15.2",
     "cors": "^2.7.1",
     "express": "^4.14.0",
+    "knex": "^0.12.9",
+    "sqlite": "^2.3.0",
     "superagent": "^2.0.0"
   }
 }
