@@ -2,7 +2,7 @@ import request from 'superagent'
 
 var repliesUrl = 'http://localhost:3000/replies'
 
-export default {
+module.exports = {
   getReplies: getReplies
   // appendWidget: appendWidget
 }

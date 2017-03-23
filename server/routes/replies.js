@@ -4,7 +4,10 @@ var router = express.Router()
 var db = require('../db')
 
 router.get('/', function (req, res) {
-  res.json(db.getReplies())
+  db.getReplies()
+    .then(function(result){
+      res.json(result)
+    })
 })
 
 // router.post('/', function (req, res) {
