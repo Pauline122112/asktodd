@@ -7,8 +7,11 @@ module.exports = {
 }
 
 function getReplies () {
-  return knex('replies').select()
+return knex('replies').select()
+.then(console.log)
+
 }
+var replies = getReplies()
 
 // function saveReplies (widget) {
 //   // widget.id = widgets.length + 1
