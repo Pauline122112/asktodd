@@ -6,7 +6,7 @@ module.exports = App
 
 function App (props) {
   return (
-    <div>
+    <div id="stuff">
       <h1>Ask Todd</h1>
       <form onSubmit={getReplies}>
         <p><input type='text'></input></p>
@@ -30,6 +30,7 @@ function ShowReply(err, res) {
   var reply = res[0]
   return (
     <div>
+      <img src="https://avatars2.githubusercontent.com/u/23625161?v=3&s=400"></img>
       {reply}
     </div>
   )
