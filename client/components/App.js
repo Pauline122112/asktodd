@@ -8,6 +8,7 @@ function App (props) {
   return (
     <div id="stuff">
       <h1>Ask Todd</h1>
+      <h3>It's like Ask Jeeves, but not at all.</h3>
       <form onSubmit={getReplies}>
         <p><input type='text'></input></p>
         <button type="submit">Ask him</button>
